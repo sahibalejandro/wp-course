@@ -6,3 +6,99 @@ Description: Theme for the WordPress course.
 Version: 1.0
 Text Domain: wpcourse
 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #444;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+/*
+ * Main Layout
+ */
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.admin-bar .main-wrapper {
+    min-height: calc( 100vh - 32px );
+}
+
+.main-title {
+    padding: 1em;
+}
+
+.main-nav {
+    background-color: #eee;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav > ul a {
+    color: #444;
+    display: block;
+    padding: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-grow: 1;
+}
+
+.main-loop {
+    flex-grow: 1;
+    padding: 0 1em;
+}
+
+.main-sidebar {
+    background: #eee;
+    min-width: 300px;
+    padding: 1em;
+}
+
+.main-footer {
+    color: white;
+    background-color: #222;
+    text-align: center;
+    height: 300px;
+    padding: 1em;
+}
+
+.main-footer a {
+    color: white;
+}
+
+/*
+ * Utilities
+ */
+
+.full-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*
+ * Media Queries
+ */
+
+@media screen and (max-width: 782px) {
+    .admin-bar .main-wrapper {
+        min-height: calc( 100vh - 46px );
+    }
+}

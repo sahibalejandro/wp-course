@@ -1,11 +1,10 @@
-<?php
-/**
- * Footer File.
- *
- * @package WordPressCourse
- */
-
-wp_footer();
-?>
+            </div><!-- .main-content -->
+            <footer class="main-footer">
+                <a href="<?php echo esc_url( __( 'https://wordpress.org', 'wpcourse' ) ); ?>">
+                    <?php printf( esc_html__( 'Proudly powered by %s', 'wpcourse' ), 'WordPress' ); ?>
+                </a>
+            </footer>
+        </div><!-- .main-wrapper -->
+        <?php wp_footer(); ?>
 	</body>
 </html>
