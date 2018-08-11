@@ -83,14 +83,19 @@ body {
 }
 
 /*
+ * Entry
+ */
+.entry-byline {
+    color: #999;
+}
+
+/*
  * Utilities
  */
 
-.full-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.not-found-message {
+    text-align: center;
+    margin-top: 10em;
 }
 
 /*

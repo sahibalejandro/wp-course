@@ -19,3 +19,10 @@
                 ] ); ?>
             </nav>
             <div class="main-content">
+                <div class="main-loop">
+                    <?php
+                    if ( ! have_posts() ) :
+                        get_template_part( 'template-parts/content', 'none' );
+                    endif;
+                    ?>
+            <?php /* .main-content and .main-loop are closed in footer.php */ ?>

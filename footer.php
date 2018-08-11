@@ -1,3 +1,5 @@
+			    </div><!-- .main-loop -->
+    			<?php get_sidebar(); ?>
             </div><!-- .main-content -->
             <footer class="main-footer">
                 <a href="<?php echo esc_url( __( 'https://wordpress.org', 'wpcourse' ) ); ?>">
