@@ -8,7 +8,7 @@ add_theme_support( 'custom-header' );
 add_theme_support( 'custom-logo' );
 add_theme_support( 'customize-selective-refresh-widgets' );
 add_theme_support( 'starter-content' );
-add_theme_support( 'post-format', [
+add_theme_support( 'post-formats', [
 	'aside',
 	'gallery',
 	'link',
